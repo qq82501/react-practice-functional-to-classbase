@@ -20,10 +20,9 @@ class ErrorBoundary extends Component {
     this.setState({ hasError: false });
   };
   render() {
-    {
-      if (this.state.hasError)
-        return <h1 onClick={this.closeErrorHandler}>Something went wrong</h1>;
-    }
+    if (this.state.hasError)
+      return <h1 onClick={this.closeErrorHandler}>Something went wrong</h1>;
+
     return this.props.children;
   }
 }
