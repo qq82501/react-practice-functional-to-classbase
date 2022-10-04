@@ -1,3 +1,3 @@
 # Convert functional component to class-base one
 
-I need to figure out how to prevent website from crashed when error handling.
+1. ErrorBoundary can only be used with class-base component, because it need "componentDidCatch" or "getDerivedStateFromError".
